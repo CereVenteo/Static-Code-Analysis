@@ -2,64 +2,61 @@
 #include <string>
 #include <time.h>
 
-#include "Hero.h"
+#include "Character.h"
 
 #define MAX_STR_LEN 50
 
-// this is code solution has been left intentionally with bugs with the purpose of testing the functionality
-// of the SCA tool CppCheck.
-
-// D&D hero creator
+// this is a code with bugs with the purpose of testing the functionality CppCheck.
 
 int main(int argc, char* args[])
 {
-	std::string hero_name;
-	Hero* new_hero = nullptr;
+	std::string character_name;
+	Character* new_character = nullptr;
 
 	srand(time(NULL));
 
-	printf("D&D Hero Creator: \n");
+	printf("Character Creator: \n");
 
-	while (hero_name.empty())
+	while (character_name.empty())
 	{
-		printf("Input your hero name\n");
+		printf("Input your character name\n");
 
 		char name_buffer[MAX_STR_LEN];
 		scanf_s("%s", name_buffer, MAX_STR_LEN);
-		hero_name = name_buffer;
+		character_name = name_buffer;
 	}
 
-	while (!new_hero)
+	while (!new_character)
 	{
 		printf("\nchoose your class: Warrior, Mage, Rogue, Random\n");
 
 		char class_buffer[MAX_STR_LEN];
 		scanf_s("%s", class_buffer, MAX_STR_LEN);
-		std::string hero_class = class_buffer;
+		std::string character_class = class_buffer;
 
-		if (hero_class == "Random" || hero_class == "Warrior" || hero_class == "Mage" || hero_class == "Rogue")
+		if (character_class == "Random" || character_class == "Warrior" || character_class == "Mage" || character_class == "Rogue")
 		{
 			unsigned int random_class = NONE;
 
-			if (hero_class == "Random")
+			if (character_class == "Random")
 				random_class = rand() % 3;
 
-			if (random_class == WARRIOR || hero_class == "Warrior")
-				new_hero = new Hero(hero_name, WARRIOR);
-			else if (random_class == MAGE || hero_class == "Mage")
-				new_hero = new Hero(hero_name, MAGE);
-			else if (random_class == ROGUE || hero_class == "Rogue")
-				new_hero = new Hero(hero_name, ROGUE);
+			if (random_class == WARRIOR || character_class == "Warrior")
+				new_character = new Character(character_name, WARRIOR);
+			else if (random_class == MAGE || character_class == "Mage")
+				new_character = new Character(character_name, MAGE);
+			else if (random_class == ROGUE || character_class == "Rogue")
+				new_character = new Character(character_name, ROGUE);
 		}
 		else
 		{
 			printf("\n invalid input!\n");
-			hero_class.clear();
+			character_class.clear();
 		}
 
 	}
 
-	new_hero->drawInfo();
+	new_character->drawInfo();
 	printf("\npress intro to quit");
 
 	getchar();

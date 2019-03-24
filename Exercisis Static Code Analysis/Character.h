@@ -36,6 +36,7 @@ public:
 	void setName(char* _out_name) { name = _out_name; };
 	void setClass(CharacterClass _character_class) { character_class = _character_class; };
 
+	//Todo 5: Scan the error with CppCheck and solve it.
 	CharacterClass getClass() { return character_class; }
 };
 

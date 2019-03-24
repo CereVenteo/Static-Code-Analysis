@@ -59,8 +59,13 @@ int main(int argc, char* args[])
 	new_character->drawInfo();
 	printf("\npress intro to quit");
 
+	// TODO 6: Scan the error with VGC and solve it.
+	
+
 	getchar();
 	getchar();
+
+	
 
 	return 1;
 }

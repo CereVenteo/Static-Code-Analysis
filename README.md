@@ -4,7 +4,7 @@ Link to the [webpage](https://cereventeo.github.io/Static-Code-Analysis/)
 
 I am [Cere Venteo](https://www.linkedin.com/in/cere-venteo-rodrigo-53529a5b/), and I'm a student on CITM on Terrassa. This is my personal research under the supervision of the lecturer [Ricard Pillosu](<https://es.linkedin.com/in/ricardpillosu>) .
 
-I will explain what a static code analysis is and how to use Coverity (online tool) and Cppcheck (offline tool) in your own projects.    
+I will explain what a static code analysis is and how to use Coverity (online tool), Cppcheck (offline tool), VisualCodeGrepper (offline tool) and SonarLint (extension tool for IDE) in your own projects.    
 
 ## What is static code analysis?
 
@@ -73,8 +73,6 @@ Cons:
 - False positives
 
 
-___
-
 ## Tutorial to install and use CppCheck
 
 First, we must download the necessary file.
@@ -97,8 +95,6 @@ Before proceeding to check the errors, let's configure a bit more our CppCheck.
 Let's check the results from the CppCheck analysis. 
 If you are using the release test code, only a single bug is found related to a const attribute of the three purposely introduced into the code.
 
-___
-
 ## Tutorial to install and use VisualCodeGrepper
 
 First, we must download the necessary file.
@@ -107,11 +103,21 @@ First, we must download the necessary file.
  - Execute the program, and make sure that the language in Settings is set to the language you are using (C++ if you are using the sample code).
  - Go to **File/New target** directory and search the folder where your source files are located.
  - Press **Scan/Full Scan** to start the analysis.
+ 
+ If you are using the test code, you will see VCG has found a bug that CppCheck did not, a memory leak. However, we can also see that VCG has not found the const error that CppCheck did before. 
 
-If you are using the test code, you will see VCG has found a bug that CppCheck did not, a memory leak. However, we can also see that VCG has not found the const error that CppCheck did before. 
+## Tutorial to install and use SonarLint
 
-If you are, instead, using your own code, you are likely to have found as well different bugs using CppCheck and VCG.
+First, we must download the necessary file.
+[SonarLint Web](https://www.sonarlint.org/)  
+ - Choose your IDE and download the tool, in our case, for Visual Studio [Extension](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
+ - Install and when .
+ - Install and when you re-open the Visual Studio will ask you if you want to apply the tool, press yes and it will be ready.
 
+If you are using the test code, you will see SonarList has found a bad code at switch case because there is no default case.
+___
+
+If you are using your own code, you are likely to have found as well different bugs using CppCheck and VCG and SonarLint.
 ___
 
 ## Conclusions 
@@ -125,8 +131,10 @@ ___
 - [What is Static Code Analysis](https://www.perforce.com/blog/qac/what-static-code-analysis)
 - [Coverity Introduction Tutorial](https://community.synopsys.com/s/article/Coverity-Tutorial-Introduction-to-Coverity)
 - [Coverity Installing Tutorial](https://community.synopsys.com/s/article/Coverity-Tutorial-Installing-Coverity-Analysis)
-- [CppCheck documentation](http://cppcheck.sourceforge.net/#documentation)
 - [Coverity SCA information page](https://community.synopsys.com/s/)
+- [CppCheck documentation](http://cppcheck.sourceforge.net/#documentation)
+- [VisualCodeGrepper information page](https://sourceforge.net/projects/visualcodegrepp/)
+- [SonarList for Visual Studio information page](https://www.sonarlint.org/visualstudio/)
 
 ## Contact info
 

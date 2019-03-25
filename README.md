@@ -35,18 +35,7 @@ ___
 
 The main benefit of online tools comes when used in sync with a code storage service (Git, Bitbucket), allowing to automatic and continuous evaluation of the code written by all team members.         
 
-## Coverity
-
-Pros:
-- Online functionality
-- Integrated with Github
-- Reference in this topic
-- Performance and reliability
-- Supports almost any language
-
-Cons:
-- Only free for open source projects
-- Hard to use
+## Tutorial to install and use Coverity
 
 In the following link you can watch an informative video about *How to Install Coverity*.
 
@@ -58,20 +47,6 @@ ___
 
 Most commonly used compilers, as Visual Studio, feature their own SCA tool.       
 However, dedicated SCA programs can provide better performance, support more programming languages or display better error definitions. 
-
-## CppCheck
-
-Pros:     
-- Completely free
-- Highly-customizable
-- Can analyze non-standard code
-- Visual Studio plug-in [here](https://marketplace.visualstudio.com/items?itemName=Alexium.Cppcheckadd-in)      
-
-
-Cons:        
-- Rudimentary, few features     
-- False positives
-
 
 ## Tutorial to install and use CppCheck
 

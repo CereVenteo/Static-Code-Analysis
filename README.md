@@ -131,3 +131,8 @@ ___
 ## Contact info
 
 If you have any doubt about this tutorial or the SCA subject, please e-mail me at cere148@gmail.com
+
+<a href="https://scan.coverity.com/projects/cereventeo-static-code-analysis">
+  <img alt="Coverity Scan Build Status"
+       src="https://scan.coverity.com/projects/17954/badge.svg"/>
+</a>

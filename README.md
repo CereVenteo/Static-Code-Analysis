@@ -50,7 +50,7 @@ Cons:
 
 In the following link you can watch an informative video about *How to Install Coverity*.
 
-[Video tutorial about SCA online tools](https://community.synopsys.com/s/article/Coverity-Tutorial-Installing-Coverity-Analysis)        
+[Video Tutorial Install Coverity](https://community.synopsys.com/s/article/Coverity-Tutorial-Installing-Coverity-Analysis)        
 
 ___
 

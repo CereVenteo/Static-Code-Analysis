@@ -6,7 +6,7 @@
 
 #define MAX_STR_LEN 50
 
-// this is a code with bugs with the purpose of testing the functionality CppCheck.
+// this is a code with bugs with the purpose of testing the functionality CppCheck, CVG, and Sonarlint.
 
 int main(int argc, char* args[])
 {
@@ -59,7 +59,7 @@ int main(int argc, char* args[])
 	new_character->drawInfo();
 	printf("\npress intro to quit");
 
-	// TODO 6: Scan the error with VGC and solve it.
+	// Error detected with VGC.
 	
 
 	getchar();

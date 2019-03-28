@@ -8,6 +8,8 @@ I will explain what a static code analysis is and how to use Coverity (online to
 
 ## What is static code analysis?
 
+![](https://github.com/cereventeo/static_code_analysis/doc/images/wait.PNG?raw=true)
+
 The Static Code Analysis or SCA is a method of debugging by examining source code before a program is run. It’s done by analyzing a set of code against a set (or multiple sets) of coding rules.
 
 This type of analysis addresses weaknesses in source code that might lead to vulnerabilities. Of course, this may also be achieved through manual code reviews. But using automated tools is much more effective.
